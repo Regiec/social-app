@@ -1,5 +1,5 @@
 {
-	"homepage": "https://Regiec.github.io/social-app",
+  "homepage": "https://Regiec.github.io/social-app",
   "name": "client",
   "version": "0.1.0",
   "private": true,
@@ -21,8 +21,8 @@
     "semantic-ui-react": "^2.0.1"
   },
   "scripts": {
-  	"predeploy": "npm start build",
-  	"deploy": "gh-pages -d build",
+    "predeploy": "npm start build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
