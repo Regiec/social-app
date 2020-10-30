@@ -21,7 +21,7 @@
     "semantic-ui-react": "^2.0.1"
   },
   "scripts": {
-    "predeploy": "npm start build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
