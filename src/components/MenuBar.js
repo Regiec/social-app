@@ -8,7 +8,7 @@ function MenuBar() {
   const { user, logout} = useContext(AuthContext)
   const pathname = window.location.pathname;
 
-  const path = pathname === '/' ? 'home' : pathname.substr(1)
+  const path = pathname === '/social-app/' ? 'home' : pathname.substr(1)
 
   const [activeItem, setActiveItem] = useState(path)
 
@@ -20,7 +20,7 @@ function MenuBar() {
           name={user.username}
           active
           as={Link}
-          to="/"
+          to="/social-app/"
         />
         <Menu.Menu position="right">
           <Menu.Item
@@ -37,7 +37,7 @@ function MenuBar() {
           active={activeItem === 'home'}
           onClick={handleItemClick}
           as={Link}
-          to="/"
+          to="/social-app/"
         />
         <Menu.Menu position="right">
           <Menu.Item
@@ -45,14 +45,14 @@ function MenuBar() {
             active={activeItem === 'login'}
             onClick={handleItemClick}
             as={Link}
-            to="/login"
+            to="/social-app/login"
           />
           <Menu.Item
             name='register'
             active={activeItem === 'register'}
             onClick={handleItemClick}
             as={Link}
-            to="/register"
+            to="/social-app/register"
           />
         </Menu.Menu>
       </Menu>

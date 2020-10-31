@@ -32,7 +32,7 @@ const commentInputRef = useRef(null)
   })
 
   function deletePostCallback() {
-    props.history.push('/')
+    props.history.push('/social-app/')
   }
 
   let postMarkup;

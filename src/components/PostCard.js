@@ -23,7 +23,7 @@ function PostCard({ post: { body, createdAt, id, username, likeCount, commentCou
           src='https://react.semantic-ui.com/images/avatar/large/matthew.png'
         />
         <Card.Header>{username}</Card.Header>
-        <Card.Meta as={Link} to={`/posts/${id}`}>{moment(createdAt).fromNow(true)}</Card.Meta>
+        <Card.Meta as={Link} to={`/social-app/posts/${id}`}>{moment(createdAt).fromNow(true)}</Card.Meta>
         <Card.Description>
           {body}
         </Card.Description>
@@ -33,7 +33,7 @@ function PostCard({ post: { body, createdAt, id, username, likeCount, commentCou
         <LikeButton user={user} post={{ id, likes, likeCount }} />
 
         <MyPopup content='Comment post'>
-          <Button labelPosition='right' as={Link} to={`/posts/${id}`}>
+          <Button labelPosition='right' as={Link} to={`/social-app/posts/${id}`}>
             <Button color='blue' basic>
               <Icon name='comments' />
             </Button>
