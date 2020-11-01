@@ -22,6 +22,12 @@ function MenuBar() {
           as={Link}
           to="/social-app/"
         />
+        <Menu.Item
+          name='favourite'
+          active
+          as={Link}
+          to="/social-app/favourite"
+        />
         <Menu.Menu position="right">
           <Menu.Item
             name='logout'

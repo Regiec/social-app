@@ -9,6 +9,7 @@ import AuthRoute from './util/AuthRoute'
 
 import MenuBar from './components/MenuBar'
 import Home from './pages/Home'
+import Favourite from './pages/Favourite'
 import Login from './pages/Login'
 import Register from './pages/Register'
  import SinglePost from './pages/SinglePost'
@@ -21,6 +22,7 @@ function App() {
         <Container>
           <MenuBar />
           <Route exact path='/social-app/' component={Home} />
+          <Route exact path='/social-app/favourite' component={Favourite} />
           <AuthRoute exact path='/social-app/login' component={Login} />
           <AuthRoute exact path='/social-app/register' component={Register} />
           { <Route exact path='/social-app/posts/:postId'component={SinglePost}/> }
