@@ -21,11 +21,11 @@ function App() {
       <Router>
         <Container>
           <MenuBar />
-          <Route exact path='*/social-app/' component={Home} />
-          <Route exact path='*/social-app/favourite' component={Favourite} />
-          <AuthRoute exact path='*/social-app/login' component={Login} />
-          <AuthRoute exact path='*/social-app/register' component={Register} />
-          { <Route exact path='*/social-app/posts/:postId'component={SinglePost}/> }
+          <Route exact path='/social-app/' component={Home} />
+          <Route exact path='/social-app/favourite' component={Favourite} />
+          <AuthRoute exact path='/social-app/login' component={Login} />
+          <AuthRoute exact path='/social-app/register' component={Register} />
+          { <Route exact path='/social-app/posts/:postId'component={SinglePost}/> }
         </Container>
       </Router>
     </AuthProvider>
